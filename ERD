@@ -1,0 +1,15 @@
+Tabel "Pasien":
+Kolom: ID Pasien (Primary Key), Nama Pasien, Tanggal Lahir, Jenis Kelamin, Alamat, Nomor Telepon
+
+Tabel "Tenaga Medis":
+Kolom: ID Tenaga Medis (Primary Key), Nama Tenaga Medis, Jabatan, Nomor Telepon
+
+Tabel "Rawat Inap":
+Kolom: ID Rawat Inap (Primary Key), ID Pasien (Foreign Key ke Tabel Pasien), ID Tenaga Medis (Foreign Key ke Tabel Tenaga Medis), Tanggal Masuk, Tanggal Keluar
+
+Tabel "Diagnosa":
+Kolom: ID Diagnosa (Primary Key), ID Rawat Inap (Foreign Key ke Tabel Rawat Inap), Jenis Penyakit, Keterangan
+
+Tabel "Obat":
+Kolom: ID Obat (Primary Key), Nama Obat, Deskripsi, Harga
+
